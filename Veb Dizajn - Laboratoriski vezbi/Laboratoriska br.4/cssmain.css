@@ -1,0 +1,164 @@
+
+div.headermenu{
+  display: inline;
+}
+.headermenu img{
+    margin-left: 40px;
+}
+ul.nav{
+  margin-right: 40px;
+  text-decoration: none;
+  float: right;
+  display: inline;
+}
+ul.nav li{
+  color:darkgray;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+ul.nav li a{
+  font-weight: bold;
+  font-family: sans-serif;
+  color:darkgray;
+  text-decoration: none;
+}
+.firstsection{
+    overflow: hidden;   
+    display: block;
+    background-color: blue;
+}
+.firstsection img.golemaslika{
+    display: inline-block;
+    float: right;
+}
+.textinside{
+    display: inline-block;
+    position: relative;
+    top:145px;
+    left:135px;
+    font-size: 30px;
+    color:white;
+}
+.secondsection{
+    overflow: hidden;
+    background-color: seagreen;
+}
+.firstgrid{
+    display: block;
+   overflow: hidden;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.firstgrid .firstgridtext{
+    margin-top: 35px;
+    margin-right: 10px;
+    text-align: justify;
+
+}
+.firstgrid img.firstgridimage{
+    border-radius: 15px;
+    float:left;
+}
+.secondgrid{
+    display: block;
+   overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.secondgrid img.secondgridimage{
+    border-radius: 15px;
+    float:right;
+    padding-bottom: 10px;
+}
+.secondgrid .secondgridtext{
+    margin-top: 35px;
+    margin-right: 10px;
+    text-align: justify;
+
+}
+.footertext{
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.upperdesc{
+    color: white;
+    overflow: hidden;
+    background-color:greenyellow;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.upperdesc h1{
+    display: inline-block;
+    float:left;
+}
+.upperdesc h3{
+    display: inline-block;
+    float:right;
+    margin-top: 30px;
+}
+
+.container{
+    background-color: lightgray;
+}
+.table{
+    width: 100%;
+}
+caption{
+    color: White;
+}
+.hrinside{
+    margin-left: 70px;
+    margin-right: 70px;
+    color:White;
+    border-style: ridge;
+}
+tr{
+    padding: 25px;
+    margin: 25px;    
+    
+ }
+th{
+    margin: 30px;
+    display: inline-block;
+    width: 20%;
+    border-radius: 15px;
+    background-color: white;
+}
+th img{
+    margin-top: 5px;
+}
+.hrgrid{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.gridtext{
+    text-align: justify;
+    margin: 15px;
+}
+.contact{
+  overflow: hidden;
+  background-color:lightgray;
+  padding:40px;
+
+}
+.contact img{
+  margin-top: 55px;
+  display: inline-block;
+  float:right;
+}
+.adress{
+    display: block;
+    float:right;
+}
+.titletext{
+    color:white;
+}
+.containercontact p{
+        width: 60%;
+        text-align: justify;
+}
