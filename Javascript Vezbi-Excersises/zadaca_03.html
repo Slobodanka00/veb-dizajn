@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca4</title>
+    <style>
+        div, button{
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <script>
+        function suma() {
+            var cel_del_1 = parseInt(document.getElementById("cel_del_1").value)
+            var imag_del_1 = parseInt(document.getElementById("imag_del_1").value)
+            var cel_del_2 = parseInt(document.getElementById("cel_del_2").value)
+            var imag_del_2 = parseInt(document.getElementById("imag_del_2").value)
+
+            if(!isNaN(cel_del_1) && !isNaN(imag_del_1) && !isNaN(cel_del_2) && !isNaN(imag_del_2)){
+                var suma1 = cel_del_1 + cel_del_2
+                var suma2 = imag_del_1 + imag_del_2
+                document.getElementById("rez_1").value = suma1
+                document.getElementById("rez_2").value = suma2
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Собирање на два комплексни броја</h1>
+<div>
+    <input type="text" id="cel_del_1">
+    <input type="text" id="imag_del_1"> <i>i</i>
+</div>
+
+<div>
+    <input type="text" id="cel_del_2">
+    <input type="text" id="imag_del_2"> <i>i</i>
+</div>
+
+<button onclick="suma()">Add</button>
+
+<div>
+    <input type="text" id="rez_1">
+    <input type="text" id="rez_2"> <i>i</i>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca2</title>
+    <script>
+        function displayRandomImage() {
+            var images = [{src:"https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg",
+                            width:"402", height:201},
+                {src: "https://farm5.staticflickr.com/4060/4567292488_5d3f4b05f6_z.jpg",
+                        width:"402", height: "268"},
+                {src:"https://wallup.net/wp-content/uploads/2017/03/28/401266-landscape-road-forest-748x421.jpg",
+                        width:"402", height:"226"}
+            ];
+
+            var preBuffer = [];
+            for(var i=0, j = images.length; i<j; i++){
+                preBuffer[i] = new Image()
+                preBuffer[i].src = images[i].src
+                preBuffer[i].width = images[i].width
+                preBuffer[i].height = images[i].height
+            }
+
+            function getRandomInt(min, max) {
+                imn = Math.floor(Math.random() * (max-min+1)) + min;
+                return preBuffer[imn];
+            }
+
+            var newImage = getRandomInt(0, preBuffer.length-1)
+
+            var imageslist = document.getElementsByTagName('img')
+            var l = imageslist.length
+            for(var k=0; k<l; k++){
+                imageslist[0].parentNode.removeChild(imageslist[0])
+            }
+
+            document.body.appendChild(newImage)
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button id="style" onclick="displayRandomImage()">Show image</button>
+    </div>
+</body>
+</html>
